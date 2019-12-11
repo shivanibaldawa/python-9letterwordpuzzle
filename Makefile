@@ -37,7 +37,7 @@ run:
 clean:
 	$(RM) -rf cover
 	$(RM) -rf .coverage
-	$(RM) -rf __pycache__ wordpuzzle/__pycache__ tests/__pycache__ .pytest_cache/
+	$(RM) -rf __pycache__ utils/__pycache__ tests/__pycache__ .pytest_cache/
 	$(RM) -rf public
 	$(RM) -rf python_*.egg-info/
 	$(RM) -rf target
