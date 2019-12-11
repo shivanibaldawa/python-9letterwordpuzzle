@@ -5,10 +5,8 @@ This is my first Python program!
 * Yay!
 @{link __main__}
 """
-from utils.ispresent import is_present
-#
-# GLOBALS
-#
+
+from utils.helpers import is_present
 
 #
 # MAIN
