@@ -16,7 +16,7 @@ if __name__ == '__main__':
     LETTERS = 'aptlyronh'
     DICT_WORD = 'python'
     if is_present(LETTERS, DICT_WORD):
-        print('Letters are present in dictionary word {}\n'.format(DICT_WORD))
+        print('Letters are present in dictionary word "{}"\n'.format(DICT_WORD))
     else:
         print(
-            'Letters are NOT present in dictionary word {}\n'.format(DICT_WORD))
+            'Letters are NOT present in dictionary word "{}"\n'.format(DICT_WORD))
