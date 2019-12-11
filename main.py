@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+This is my first Python program!
+* Yay!
+@{link __main__}
+"""
+from utils.ispresent import is_present
+#
+# GLOBALS
+#
+
+#
+# MAIN
+#
+if __name__ == '__main__':
+    print('Word Puzzle')
+    LETTERS = list('aptlyronh')
+    DICT_WORD = list('python')
+    WORD = DICT_WORD
+    if is_present(LETTERS, DICT_WORD):
+        print('Letters are present in dictionary word {}\n'.format(WORD))
+    else:
+        print('Letters are NOT present in dictionary word {}\n'.format(WORD))
