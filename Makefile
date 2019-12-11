@@ -26,12 +26,12 @@ lint:
 	pylint -v $(SRCS)
 	
 .PHONY:	test
-#test:  check
-#	${PYTHON} -m pytest
+test:  check
+	${PYTHON} -m pytest $(SRCS)
 
 .PHONY:	run
 run:
-	${PYTHON} main.py
+	${PYTHON} wordpuzzle.py
 
 .PHONY:	clean
 clean:

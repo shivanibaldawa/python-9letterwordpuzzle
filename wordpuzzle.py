@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 """
 This is my first Python program!
 * Yay!
 @{link __main__}
 """
+
 from utils.ispresent import is_present
-#
-# GLOBALS
-#
 
 #
 # MAIN

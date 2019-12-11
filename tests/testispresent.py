@@ -1,10 +1,16 @@
-
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Please add me!
+"""
 import unittest
-#from wordpuzzle.ispresent import is_present
-from utils.ispresent import ispresent
+
+from utils.ispresent import is_present
 
 
-class testispresent(unittest.TestCase):
+class TestIsPresent(unittest.TestCase):
+    ''' Test word puzzle utility functions. '''
 
     def test_is_present(self):
+        ''' Word contains valid characters. '''
         self.assertTrue(is_present('haisjdlfk', 'hi'))

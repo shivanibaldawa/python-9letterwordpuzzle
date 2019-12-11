@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """
 Check if the word is valid
-@{link __is_present__}
 """
 
 
