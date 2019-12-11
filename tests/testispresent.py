@@ -5,7 +5,7 @@ Please add me!
 """
 import unittest
 
-from utils.ispresent import is_present
+from utils.helpers import is_present
 
 
 class TestIsPresent(unittest.TestCase):

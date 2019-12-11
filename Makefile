@@ -35,8 +35,6 @@ run:
 
 .PHONY:	clean
 clean:
-	@echo Please implement me!
-	@echo delete all *.pyc
 	$(RM) -rf cover
 	$(RM) -rf .coverage
 	$(RM) -rf __pycache__ wordpuzzle/__pycache__ tests/__pycache__ .pytest_cache/
