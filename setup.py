@@ -1,3 +1,4 @@
+"""
 import setuptools
 
 with open("README.md", "r") as fh:
@@ -19,3 +20,4 @@ setuptools.setup(
         "License :: GPL 3",
         "Operating System :: OS Independent",
     ])
+"""

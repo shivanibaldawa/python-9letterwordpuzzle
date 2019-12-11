@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-This is my first Python program!
-* Yay!
+Check if the word is valid
 @{link __is_present__}
 """
 
