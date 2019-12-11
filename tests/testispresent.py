@@ -15,6 +15,10 @@ class TestIsPresent(unittest.TestCase):
         ''' Word contains valid characters. '''
         self.assertTrue(is_present('haisjdlfk', 'hi'))
 
+    def test_is_not_present(self):
+        '''Word contains invalid characters'''
+        self.assertFalse(is_present('alsbcjsie', 'hi'))
+
     def test_validation(self):
         '''Dictionary words validated for length and mandatory character'''
         self.assertTrue(validation('book', 'k', 4))
