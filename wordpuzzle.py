@@ -6,17 +6,22 @@ This is my first Python program!
 @{link __main__}
 """
 
-from utils.helpers import is_present
+from utils.helpers import is_present,validation
 
 #
 # MAIN
 #
 if __name__ == '__main__':
     print('Word Puzzle')
-    LETTERS = list('aptlyronh')
-    DICT_WORD = list('python')
+    LETTERS = 'aptlyronh'
+    DICT_WORD = 'python'
+    mandatory_char='o'
+    minimum_length=4
+
     WORD = DICT_WORD
-    if is_present(LETTERS, DICT_WORD):
-        print('Letters are present in dictionary word {}\n'.format(WORD))
-    else:
-        print('Letters are NOT present in dictionary word {}\n'.format(WORD))
+
+    if validation(DICT_WORD,mandatory_char,minimum_length):
+        if is_present(LETTERS, DICT_WORD):
+            print('Letters are present in dictionary word {}\n'.format(WORD))
+        else:
+            print('Letters are NOT present in dictionary word {}\n'.format(WORD))
