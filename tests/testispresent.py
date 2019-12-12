@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Please add me!
+Tests the utility functions of the Wordpuzzle
 """
 import unittest
 
-from utils.helpers import is_present, validation
+from utils.helpers import is_present, mandatorychar_check, minimumlength_check
 
 
 class TestIsPresent(unittest.TestCase):
@@ -19,14 +19,18 @@ class TestIsPresent(unittest.TestCase):
         '''Word contains invalid characters'''
         self.assertFalse(is_present('alsbcjsie', 'hi'))
 
-    def test_validation(self):
-        '''Dictionary words validated for length and mandatory character'''
-        self.assertTrue(validation('book', 'k', 4))
+    def test_mandatorychar_present(self):
+        '''Mandatory character is present in the dictionary word'''
+        self.assertTrue(mandatorychar_check('book', 'k'))
 
-    def test_mandatory_character(self):
-        '''Mandatory character present validation'''
-        self.assertFalse(validation('book', 'a', 4))
+    def test_mandatorychar_absent(self):
+        '''Mandatory character is absent in the dictionary word'''
+        self.assertFalse(mandatorychar_check('book', 'a'))
 
-    def test_minimum_length(self):
-        '''Minimum length validation'''
-        self.assertFalse(validation('boo', 'b', 4))
+    def test_minimumlength(self):
+        '''Character is of the minimum length'''
+        self.assertTrue(minimumlength_check('book', 4))
+
+    def test_notminimumlength(self):
+        '''Character is of the minimum length'''
+        self.assertFalse(minimumlength_check('boo', 4))

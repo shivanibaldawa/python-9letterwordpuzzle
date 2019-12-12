@@ -34,7 +34,7 @@ test:  check
 
 .PHONY:	run
 run:
-	${PYTHON} wordpuzzle.py
+	${PYTHON} wordpuzzle.py -l paytsnoah -c p 
 
 .PHONY:	clean
 clean:
