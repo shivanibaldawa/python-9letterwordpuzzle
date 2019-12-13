@@ -64,5 +64,6 @@ if __name__ == '__main__':
     for DICT_WORD in ARGS.Dictionary:
         WORD = DICT_WORD.strip()
         if mandatorychar_check(WORD, MANDATORY_CHAR) and minimumlength_check(
-                WORD, MIN_LENGTH) and is_present(LETTERS, WORD) and len(DICT_WORD)<=9:
+                WORD, MIN_LENGTH) and is_present(LETTERS,
+                                                 WORD) and len(DICT_WORD) <= 9:
             print(WORD)

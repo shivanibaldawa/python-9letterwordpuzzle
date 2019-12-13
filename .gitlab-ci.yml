@@ -1,0 +1,14 @@
+image: python:3
+
+
+before_script:
+  - pip install -U -r requirements.txt
+
+build:
+  stage: build
+  script:
+    - yapf --style google --diff --parallel wordpuzzle.py tests/testispresent.py utils/helpers.py
+    - pylint wordpuzzle.py tests/testispresent.py utils/helpers.py
+    - python -m pytest tests/test*.py
+    - python wordpuzzle.py -h
+    
